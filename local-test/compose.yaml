@@ -1,0 +1,12 @@
+# Local check of the template image: same settings as on Railway.
+services:
+  tronbyt:
+    build: ..
+    ports:
+      - "41376:8000"
+    environment:
+      PORT: "8000"
+    volumes:
+      - data:/app/data
+volumes:
+  data:
